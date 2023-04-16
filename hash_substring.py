@@ -14,19 +14,19 @@ def read_input():
     # this is the sample return, notice the rstrip function
 
 
-    input_type = input().strip()
-
-
-    if 'i' in input_type:
+    fileorno = input()
+    
+    if "I" in fileorno or "i" in fileorno:
         pattern = input().rstrip()
         text = input().rstrip()
-    elif input_type == 'f':
-        filename = "06"
-        with open("tests/" + filename, 'r') as f:
-            pattern = f.readline().rstrip()
-            text = f.readline().rstrip()
-
-    return (pattern, text)
+    elif "F" in fileorno or "f" in fileorno:
+        file = "06"
+        if "a" not in file:
+            with open("tests/" + file, 'r')as f:
+                pattern = f.readline().rstrip()
+                text = f.readline().rstrip()
+                
+    return pattern, text
 
 
 def print_occurrences(output):
