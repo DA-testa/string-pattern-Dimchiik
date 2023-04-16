@@ -17,7 +17,7 @@ def read_input():
     input_type = input().strip()
 
 
-    if input_type == 'i':
+    if 'i' in input_type:
         pattern = input().rstrip()
         text = input().rstrip()
     elif input_type == 'f':
