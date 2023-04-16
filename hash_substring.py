@@ -21,7 +21,7 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif input_type == 'f':
-        filename = input().rstrip()
+        filename = "06"
 
         with open("tests/" + filename, 'r') as f:
             pattern = f.readline().rstrip()
