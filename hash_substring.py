@@ -26,8 +26,6 @@ def read_input():
         with open("tests/" + filename, 'r') as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
-    else:
-        raise ValueError('Invalid input type')
 
     return (pattern, text)
 
