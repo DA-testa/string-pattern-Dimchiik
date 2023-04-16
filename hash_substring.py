@@ -22,7 +22,6 @@ def read_input():
         text = input().rstrip()
     elif input_type == 'f':
         filename = "06"
-
         with open("tests/" + filename, 'r') as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
@@ -49,7 +48,6 @@ def get_occurrences(pattern, text):
 
 
     for i in range(t_len - p_len + 1):
-
         if p_hash == t_hash and pattern == text[i:i+p_len]:
             positions.append(i)
         if i < t_len - p_len:
